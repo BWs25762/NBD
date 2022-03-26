@@ -1,0 +1,39 @@
+Current Mongosh Log ID:	623f3e42b9557b19caa29e6d
+Connecting to:		mongodb://127.0.0.1:27017/nbd?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.2.3
+Using MongoDB:		5.0.6
+Using Mongosh:		1.2.3
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+------
+   The server generated these startup warnings when booting:
+   2022-03-26T17:01:30.614+01:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+   2022-03-26T17:01:30.614+01:00: This server is bound to localhost. Remote systems will be unable to connect to this server. Start the server with --bind_ip <address> to specify which IP addresses it should serve responses from, or with --bind_ip_all to bind to all interfaces. If this behavior is desired, start the server with --bind_ip 127.0.0.1 to disable this warning
+------
+
+Loading file: zapytanie_1.js
+{
+  _id: ObjectId("623f3ae29fb699a9bae0f124"),
+  sex: 'Male',
+  first_name: 'Wayne',
+  last_name: 'Fields',
+  job: 'Speech Pathologist',
+  email: 'wfields0@diigo.com',
+  location: {
+    city: 'Oyo',
+    address: { streetname: 'Beilfuss', streetnumber: '860' }
+  },
+  description: 'vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris',
+  height: '152.38',
+  weight: '66.81',
+  birth_date: '1990-02-21T02:55:03Z',
+  nationality: 'Nigeria',
+  credit: [
+    {
+      type: 'switch',
+      number: '6759888939100098699',
+      currency: 'COP',
+      balance: '5117.06'
+    }
+  ]
+}
