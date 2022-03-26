@@ -1,0 +1,517 @@
+Current Mongosh Log ID:	623f4559b5058e10fa34bd4d
+Connecting to:		mongodb://127.0.0.1:27017/nbd?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.2.3
+Using MongoDB:		5.0.6
+Using Mongosh:		1.2.3
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+------
+   The server generated these startup warnings when booting:
+   2022-03-26T17:01:30.614+01:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+   2022-03-26T17:01:30.614+01:00: This server is bound to localhost. Remote systems will be unable to connect to this server. Start the server with --bind_ip <address> to specify which IP addresses it should serve responses from, or with --bind_ip_all to bind to all interfaces. If this behavior is desired, start the server with --bind_ip 127.0.0.1 to disable this warning
+------
+
+Loading file: zapytanie_5.js
+[
+  {
+    first_name: 'Gregory',
+    last_name: 'Anderson',
+    location: { city: 'Caminaca' }
+  },
+  {
+    first_name: 'Anthony',
+    last_name: 'Nichols',
+    location: { city: 'Jepuro' }
+  },
+  {
+    first_name: 'Ernest',
+    last_name: 'Ortiz',
+    location: { city: 'Zhongcheng' }
+  },
+  {
+    first_name: 'Andrew',
+    last_name: 'White',
+    location: { city: 'Āsbe Teferī' }
+  },
+  {
+    first_name: 'Brenda',
+    last_name: 'Gonzalez',
+    location: { city: 'Glagahan' }
+  },
+  {
+    first_name: 'Ralph',
+    last_name: 'Austin',
+    location: { city: 'Povorino' }
+  },
+  {
+    first_name: 'Virginia',
+    last_name: 'Chapman',
+    location: { city: 'Huangling' }
+  },
+  {
+    first_name: 'Paula',
+    last_name: 'Hunt',
+    location: { city: 'Vsevolozhsk' }
+  },
+  {
+    first_name: 'William',
+    last_name: 'Warren',
+    location: { city: 'Hallsberg' }
+  },
+  {
+    first_name: 'Phillip',
+    last_name: 'Carter',
+    location: { city: 'El Mida' }
+  },
+  {
+    first_name: 'Steve',
+    last_name: 'Olson',
+    location: { city: 'Santa Cruz' }
+  },
+  {
+    first_name: 'Anthony',
+    last_name: 'Wood',
+    location: { city: 'Donghe' }
+  },
+  {
+    first_name: 'Larry',
+    last_name: 'Fields',
+    location: { city: 'Wonokerso' }
+  },
+  {
+    first_name: 'Kelly',
+    last_name: 'Flores',
+    location: { city: 'Rio Claro' }
+  },
+  {
+    first_name: 'Donald',
+    last_name: 'Montgomery',
+    location: { city: 'Anjō' }
+  },
+  {
+    first_name: 'Eugene',
+    last_name: 'Ford',
+    location: { city: 'Muang Long' }
+  },
+  {
+    first_name: 'Raymond',
+    last_name: 'Ward',
+    location: { city: 'Santa María Ixhuatán' }
+  },
+  {
+    first_name: 'Nancy',
+    last_name: 'Fisher',
+    location: { city: 'Leon' }
+  },
+  {
+    first_name: 'Deborah',
+    last_name: 'Moreno',
+    location: { city: 'Cisewu' }
+  },
+  {
+    first_name: 'Jacqueline',
+    last_name: 'Morgan',
+    location: { city: 'Gränna' }
+  },
+  {
+    first_name: 'Jesse',
+    last_name: 'Gilbert',
+    location: { city: 'Syriam' }
+  },
+  {
+    first_name: 'Andrew',
+    last_name: 'Marshall',
+    location: { city: 'Paradela' }
+  },
+  {
+    first_name: 'Stephanie',
+    last_name: 'Porter',
+    location: { city: 'Agen' }
+  },
+  {
+    first_name: 'Amy',
+    last_name: 'Banks',
+    location: { city: 'Strážná' }
+  },
+  {
+    first_name: 'Virginia',
+    last_name: 'Mills',
+    location: { city: 'Zarzis' }
+  },
+  {
+    first_name: 'Patrick',
+    last_name: 'Moore',
+    location: { city: 'Nong Khai' }
+  },
+  {
+    first_name: 'Jason',
+    last_name: 'Banks',
+    location: { city: 'Al Fukhkhārī' }
+  },
+  {
+    first_name: 'Russell',
+    last_name: 'Bryant',
+    location: { city: 'Zhengdonglu' }
+  },
+  {
+    first_name: 'Wanda',
+    last_name: 'Burton',
+    location: { city: 'Liangnong' }
+  },
+  {
+    first_name: 'Maria',
+    last_name: 'James',
+    location: { city: 'Bicaj' }
+  },
+  {
+    first_name: 'Theresa',
+    last_name: 'West',
+    location: { city: 'Culubasa' }
+  },
+  {
+    first_name: 'Patrick',
+    last_name: 'Myers',
+    location: { city: 'Vicente Guerrero' }
+  },
+  {
+    first_name: 'Ruth',
+    last_name: 'Watson',
+    location: { city: 'Aş Şafaqayn' }
+  },
+  {
+    first_name: 'Joshua',
+    last_name: 'Coleman',
+    location: { city: 'Lebao' }
+  },
+  {
+    first_name: 'Catherine',
+    last_name: 'Jackson',
+    location: { city: 'Linan' }
+  },
+  {
+    first_name: 'Ronald',
+    last_name: 'Taylor',
+    location: { city: 'Spytkowice' }
+  },
+  {
+    first_name: 'Russell',
+    last_name: 'Matthews',
+    location: { city: 'Itumbiara' }
+  },
+  {
+    first_name: 'Maria',
+    last_name: 'Scott',
+    location: { city: 'Oslo' }
+  },
+  {
+    first_name: 'Harry',
+    last_name: 'Miller',
+    location: { city: 'Orion' }
+  },
+  {
+    first_name: 'Julia',
+    last_name: 'Morgan',
+    location: { city: 'Yamrat' }
+  },
+  {
+    first_name: 'Ruth',
+    last_name: 'Ray',
+    location: { city: 'Shaping' }
+  },
+  {
+    first_name: 'Harold',
+    last_name: 'Webb',
+    location: { city: 'Novyye Kuz’minki' }
+  },
+  {
+    first_name: 'Charles',
+    last_name: 'Rivera',
+    location: { city: 'Bordeaux' }
+  },
+  {
+    first_name: 'John',
+    last_name: 'Banks',
+    location: { city: 'Bun Barat' }
+  },
+  {
+    first_name: 'Eugene',
+    last_name: 'Long',
+    location: { city: 'Västra Frölunda' }
+  },
+  {
+    first_name: 'Andrew',
+    last_name: 'Black',
+    location: { city: 'Nanlu' }
+  },
+  {
+    first_name: 'Christopher',
+    last_name: 'Fields',
+    location: { city: 'Löddeköpinge' }
+  },
+  {
+    first_name: 'Ronald',
+    last_name: 'Kennedy',
+    location: { city: 'Boavista' }
+  },
+  {
+    first_name: 'Janice',
+    last_name: 'Cooper',
+    location: { city: 'Igir-igir' }
+  },
+  {
+    first_name: 'Nancy',
+    last_name: 'Medina',
+    location: { city: 'Čelopek' }
+  },
+  {
+    first_name: 'Cynthia',
+    last_name: 'Wallace',
+    location: { city: 'Quận Tân Phú' }
+  },
+  {
+    first_name: 'Cynthia',
+    last_name: 'Simmons',
+    location: { city: 'Kirawsk' }
+  },
+  {
+    first_name: 'Elizabeth',
+    last_name: 'Howard',
+    location: { city: 'Lingtou' }
+  },
+  {
+    first_name: 'Andrea',
+    last_name: 'Ramos',
+    location: { city: 'Mouriscas' }
+  },
+  {
+    first_name: 'Kathleen',
+    last_name: 'Martinez',
+    location: { city: 'Ulricehamn' }
+  },
+  {
+    first_name: 'Larry',
+    last_name: 'Bennett',
+    location: { city: 'Layo' }
+  },
+  {
+    first_name: 'Earl',
+    last_name: 'Stephens',
+    location: { city: 'Jinrongjie' }
+  },
+  {
+    first_name: 'Charles',
+    last_name: 'Jordan',
+    location: { city: 'Estancia' }
+  },
+  {
+    first_name: 'Mary',
+    last_name: 'Armstrong',
+    location: { city: 'Shaffa' }
+  },
+  {
+    first_name: 'Irene',
+    last_name: 'Butler',
+    location: { city: 'Vyaz’ma' }
+  },
+  {
+    first_name: 'Karen',
+    last_name: 'Matthews',
+    location: { city: 'Bandhagen' }
+  },
+  {
+    first_name: 'Marilyn',
+    last_name: 'Ward',
+    location: { city: 'Tha Bo' }
+  },
+  {
+    first_name: 'Gerald',
+    last_name: 'Williamson',
+    location: { city: 'Menghe' }
+  },
+  {
+    first_name: 'Beverly',
+    last_name: 'Coleman',
+    location: { city: 'Lynn' }
+  },
+  {
+    first_name: 'Teresa',
+    last_name: 'Allen',
+    location: { city: 'Aldeia da Mata' }
+  },
+  {
+    first_name: 'William',
+    last_name: 'Richardson',
+    location: { city: 'Penaraga' }
+  },
+  {
+    first_name: 'Tina',
+    last_name: 'Gordon',
+    location: { city: 'Tamansari' }
+  },
+  {
+    first_name: 'Mildred',
+    last_name: 'Burns',
+    location: { city: 'Mishan' }
+  },
+  {
+    first_name: 'Ruby',
+    last_name: 'Meyer',
+    location: { city: 'Timur' }
+  },
+  {
+    first_name: 'Marie',
+    last_name: 'Fowler',
+    location: { city: 'Cuispes' }
+  },
+  {
+    first_name: 'Carlos',
+    last_name: 'Ellis',
+    location: { city: 'Lymanske' }
+  },
+  {
+    first_name: 'Judy',
+    last_name: 'Washington',
+    location: { city: 'San Andrés' }
+  },
+  {
+    first_name: 'Jesse',
+    last_name: 'Woods',
+    location: { city: 'Cardona' }
+  },
+  {
+    first_name: 'Samuel',
+    last_name: 'Johnson',
+    location: { city: 'Šilheřovice' }
+  },
+  {
+    first_name: 'Sean',
+    last_name: 'Lawson',
+    location: { city: 'La Tigra' }
+  },
+  {
+    first_name: 'Jean',
+    last_name: 'Montgomery',
+    location: { city: 'Busay' }
+  },
+  {
+    first_name: 'Virginia',
+    last_name: 'James',
+    location: { city: 'Ceres' }
+  },
+  {
+    first_name: 'Joyce',
+    last_name: 'Burns',
+    location: { city: 'Mapiri' }
+  },
+  {
+    first_name: 'Anthony',
+    last_name: 'White',
+    location: { city: 'Willowmore' }
+  },
+  {
+    first_name: 'Craig',
+    last_name: 'Romero',
+    location: { city: 'Tunggaoen Timur' }
+  },
+  {
+    first_name: 'Frances',
+    last_name: 'Reed',
+    location: { city: 'Francisco J Mujica' }
+  },
+  {
+    first_name: 'Gregory',
+    last_name: 'Davis',
+    location: { city: 'Zimmi' }
+  },
+  {
+    first_name: 'Julie',
+    last_name: 'Martinez',
+    location: { city: 'Xiushi' }
+  },
+  {
+    first_name: 'Bruce',
+    last_name: 'Spencer',
+    location: { city: 'Voskresenskoye' }
+  },
+  {
+    first_name: 'Lori',
+    last_name: 'Moreno',
+    location: { city: 'Muff' }
+  },
+  {
+    first_name: 'Lois',
+    last_name: 'Lewis',
+    location: { city: 'Shayuan' }
+  },
+  {
+    first_name: 'Kathryn',
+    last_name: 'Johnston',
+    location: { city: 'Itabaiana' }
+  },
+  {
+    first_name: 'Matthew',
+    last_name: 'Phillips',
+    location: { city: 'Dayr as Sūdān' }
+  },
+  {
+    first_name: 'Deborah',
+    last_name: 'Alexander',
+    location: { city: 'Hefei' }
+  },
+  {
+    first_name: 'Eugene',
+    last_name: 'Smith',
+    location: { city: 'Lamam' }
+  },
+  {
+    first_name: 'Ryan',
+    last_name: 'Hill',
+    location: { city: 'Khorinsk' }
+  },
+  {
+    first_name: 'Beverly',
+    last_name: 'Griffin',
+    location: { city: 'Selenicë' }
+  },
+  {
+    first_name: 'Steve',
+    last_name: 'Fields',
+    location: { city: 'Pindi Gheb' }
+  },
+  {
+    first_name: 'Arthur',
+    last_name: 'Oliver',
+    location: { city: 'Porkhov' }
+  },
+  {
+    first_name: 'Janice',
+    last_name: 'Rose',
+    location: { city: 'Witihama' }
+  },
+  {
+    first_name: 'Jack',
+    last_name: 'Carr',
+    location: { city: 'Lobitos' }
+  },
+  {
+    first_name: 'Phyllis',
+    last_name: 'Cole',
+    location: { city: 'Mirskoy' }
+  },
+  {
+    first_name: 'Albert',
+    last_name: 'Powell',
+    location: { city: 'Dubréka' }
+  },
+  {
+    first_name: 'Lois',
+    last_name: 'Moore',
+    location: { city: 'København' }
+  },
+  {
+    first_name: 'Joseph',
+    last_name: 'Wallace',
+    location: { city: 'Rijswijk' }
+  },
+  ... 2682 more items
+]
