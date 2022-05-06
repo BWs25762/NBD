@@ -1,0 +1,12 @@
+[
+  {
+    _id: 'Male',
+    mean_height: 166.42332765018554,
+    mean_weight: 69.5143917360345
+  },
+  {
+    _id: 'Female',
+    mean_height: 166.46568429551877,
+    mean_weight: 69.62414210738797
+  }
+]
