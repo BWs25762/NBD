@@ -1,0 +1,12 @@
+DeprecationWarning: Collection.mapReduce() is deprecated. Use an aggregation instead.
+See https://docs.mongodb.com/manual/core/map-reduce for details.
+[
+  {
+    _id: 'Female',
+    value: { height: 166.46568429551877, weight: 69.62414210738797 }
+  },
+  {
+    _id: 'Male',
+    value: { height: 166.42332765018554, weight: 69.5143917360345 }
+  }
+]
