@@ -1,0 +1,24 @@
+1.
+curl -X POST http://localhost:8098/buckets/s25762/keys/zweihander -H "Content-Type: application/json" -d "{\"str\":24,\"dex\":10,\"type\":\"Ultra Greatsword\",\"weight\":10}" -i
+curl -X POST http://localhost:8098/buckets/s25762/keys/bkh -H "Content-Type: application/json" -d "{\"str\":32,\"dex\":18,\"type\":\"Halberd\",\"weight\":14}" -i
+curl -X POST http://localhost:8098/buckets/s25762/keys/uchigatana -H "Content-Type: application/json" -d "{\"str\":14,\"dex\":14,\"type\":\"Katana\",\"weight\":5}" -i
+curl -X POST http://localhost:8098/buckets/s25762/keys/demonsgreataxe -H "Content-Type: application/json" -d "{\"str\":46,\"dex\":0,\"type\":\"Great Axe\",\"weight\":22}" -i
+curl -X POST http://localhost:8098/buckets/s25762/keys/grant -H "Content-Type: application/json" -d "{\"str\":50,\"dex\":0,\"type\":\"Great Hammer\",\"weight\":24}" -i
+2.
+curl -X GET http://localhost:8098/buckets/s25762/keys/zweihander -i
+3.
+curl -X PUT http://localhost:8098/buckets/s25762/keys/grant -H "Content-Type: application/json" -d "{\"str\":50,\"dex\":0,\"fai\":30,\"type\":\"Great Hammer\",\"weight\":24}" -i
+4.
+curl -X PUT http://localhost:8098/buckets/s25762/keys/uchigatana -H "Content-Type: application/json" -d "{\"str\":14,\"dex\":14,\"type\":\"Katana\"}" -i
+5.
+curl -X PUT http://localhost:8098/buckets/s25762/keys/demonsgreataxe -H "Content-Type: application/json" -d "{\"str\":46,\"dex\":0,\"type\":\"Axe\",\"weight\":22}" -i
+6.
+curl -X DELETE http://localhost:8098/buckets/s25762/keys/uchigatana -i
+7.
+curl -X GET http://localhost:8098/buckets/s25762/keys/uchigatana -i
+8.
+curl -X POST http://localhost:8098/buckets/s25762/keys/ -H "Content-Type: application/json" -d "{\"field\":1}" -i
+9.
+curl -X GET http://localhost:8098/buckets/s25762/keys/CRnVq8lwgTYWyLDV8p7f2qKpYli -i
+10.
+curl -X DELETE http://localhost:8098/buckets/s25762/keys/CRnVq8lwgTYWyLDV8p7f2qKpYli -i
