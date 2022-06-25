@@ -1,0 +1,17 @@
+ARGS:
+edit={'field': 'new_value', 'extra_field': 2}
+bucket=main_bucket
+document={'field': 'value', 'other_field': 1}
+key=None
+
+pobranie przed modyfikacja:
+{'field': 'value', 'other_field': 1}
+{'bucket': <RiakBucket 'main_bucket'>, 'vclock': <VClock b'a85hYGBgzGDKBVI8+xkWvg8/16zBwKAumMGUyJjHynDvpPYdviwA'>, 'client': <riak.client.RiakClient object at 0x000002080A459C18>, '_resolver': None, 'key': '2x83PyWvdFEfGV40UbCuhbWJBRc', 'siblings': [<riak.content.RiakContent object at 0x000002080A471940>]}
+
+pobranie po modyfikacji:
+{'field': 'new_value', 'extra_field': 2, 'other_field': 1}
+{'bucket': <RiakBucket 'main_bucket'>, 'vclock': <VClock b'a85hYGBgzGDKBVI8+xkWvg8/16zBwKAumMGUyJTHynDvpPYdviwA'>, 'client': <riak.client.RiakClient object at 0x000002080A459C18>, '_resolver': None, 'key': '2x83PyWvdFEfGV40UbCuhbWJBRc', 'siblings': [<riak.content.RiakContent object at 0x000002080A471BE0>]}
+
+pobranie po usunieciu:
+None
+{'bucket': <RiakBucket 'main_bucket'>, 'vclock': <VClock b'a85hYGBgzGDKBVI8+xkWvg8/16zBwKAumMGUyJzHynDvpPYdviwA'>, 'client': <riak.client.RiakClient object at 0x000002080A459C18>, '_resolver': None, 'key': '2x83PyWvdFEfGV40UbCuhbWJBRc', 'siblings': []}
