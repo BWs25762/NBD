@@ -1,0 +1,5 @@
+1. MATCH p=shortestPath((dar:town {name: "Darjeeling"})-[*]->(san:peak {name: "Sandakphu"})) RETURN p
+2. MATCH p=shortestPath((dar:town {name: "Darjeeling"})-[path*]->(san:peak {name: "Sandakphu"})) WHERE all(x IN path WHERE x.winter = "true") RETURN p
+3. MATCH p=((dar:town {name: "Darjeeling"})-[path*]->(san:peak {name: "Sandakphu"})) WITH reduce(total_distance = 0, track IN path | total_distance + track.distance) AS distance, p RETURN p ORDER BY distance
+4. MATCH p=((dar:town {name: "Darjeeling"})-[path:twowheeler*]->(dest)) WHERE all(x IN path WHERE x.summer = "true") RETURN p
+5. MATCH (port:Airport)-[r:ORIGIN]-(flight) WITH port, count(r) AS flights RETURN port, flights ORDER BY flights DESC
