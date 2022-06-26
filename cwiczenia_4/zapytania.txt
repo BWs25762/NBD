@@ -16,16 +16,68 @@ WHERE cost < 3000
 UNWIND path_node_list as final_nodes
 MATCH (final_nodes:Airport)
 RETURN final_nodes
-7.
-MATCH (lax:Airport {name: "LAX"})
-CALL apoc.path.expand(lax, '<ORIGIN|DESTINATION>', null, 2, 8)
+7. # Jestem prawie pewien, że nie da się dolecieć z LAX do DAY, przy głębokości 14 mój komputer już nie wyrabiał, więc szukam lotów do PHX
+MATCH (start_port:Airport {name:"LAX"})
+WITH start_port
+MATCH (end_port:Airport {name:"PHX"})
+CALL apoc.path.expandConfig(start_port,{
+    beginSequenceAtStart:false,
+    sequence: "<ORIGIN,Flight,DESTINATION>,Airport,<ORIGIN",
+    minLevel: 2,
+    maxLevel: 10,
+    terminatorNodes: [end_port]
+})
+YIELD path
+with path, nodes(path) as path_node_list
+MATCH (t:Ticket)-[:ASSIGN]->(f:Flight)
+WHERE f IN path_node_list
+with path, f, sum(t.price) as total_cost
+RETURN path
+ORDER BY total_cost
+8. # znowu dla phx
+MATCH (start_port:Airport {name:"LAX"})
+WITH start_port
+MATCH (end_port:Airport {name:"PHX"})
+CALL apoc.path.expandConfig(start_port,{
+    beginSequenceAtStart:false,
+    sequence: "<ORIGIN,Flight,DESTINATION>,Airport,<ORIGIN",
+    minLevel: 2,
+    maxLevel: 10,
+    terminatorNodes: [end_port]
+})
 YIELD path
 with path, nodes(path) as path_node_list
 MATCH (t:Ticket)-[:ASSIGN]->(f:Flight)
 WHERE f IN path_node_list
 with path, f, min(t.price) as f_min_p, path_node_list
 with path, sum(f_min_p) as cost, path_node_list
-WHERE cost < 3000
-UNWIND path_node_list as final_nodes
-MATCH (final_nodes:Airport)
-RETURN final_nodes
+RETURN path
+ORDER BY cost
+LIMIT 1
+9.
+MATCH (f:Flight)
+WITH COLLECT( distinct f.airline) AS airlines_l
+UNWIND airlines_l as airlines
+MATCH (a:Airport)-[]-(f)
+WHERE f.airline = airlines
+with airlines, COLLECT(distinct a.name) as cities
+with airlines, size(cities) as cities_count
+RETURN airlines, cities_count
+ORDER BY cities_count
+10.
+MATCH (start_port:Airport)
+CALL apoc.path.expandConfig(start_port,{
+    relationshipFilter: '<ORIGIN|DESTINATION>',
+    minLevel: 4,
+    maxLevel: 4,
+    uniqueness: "NODE_GLOBAL"
+})
+YIELD path
+with path, nodes(path) as path_node_list
+MATCH (t:Ticket)-[:ASSIGN]->(f:Flight)
+WHERE f IN path_node_list
+with path, f, min(t.price) as f_min_p, path_node_list
+with path, sum(f_min_p) as cost, path_node_list
+RETURN path
+ORDER BY cost
+LIMIT 1
