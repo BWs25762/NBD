@@ -1,0 +1,31 @@
+1. MATCH p=shortestPath((dar:town {name: "Darjeeling"})-[*]->(san:peak {name: "Sandakphu"})) RETURN p
+2. MATCH p=shortestPath((dar:town {name: "Darjeeling"})-[path*]->(san:peak {name: "Sandakphu"})) WHERE all(x IN path WHERE x.winter = "true") RETURN p
+3. MATCH p=((dar:town {name: "Darjeeling"})-[path*]->(san:peak {name: "Sandakphu"})) WITH reduce(total_distance = 0, track IN path | total_distance + track.distance) AS distance, p RETURN p ORDER BY distance
+4. MATCH p=((dar:town {name: "Darjeeling"})-[path:twowheeler*]->(dest)) WHERE all(x IN path WHERE x.summer = "true") RETURN p
+5. MATCH (port:Airport)-[r:ORIGIN]-(flight) WITH port, count(r) AS flights RETURN port, flights ORDER BY flights DESC
+6.
+MATCH (lax:Airport {name: "LAX"})
+CALL apoc.path.expand(lax, '<ORIGIN|DESTINATION>', null, 2, 8)
+YIELD path
+with path, nodes(path) as path_node_list
+MATCH (t:Ticket)-[:ASSIGN]->(f:Flight)
+WHERE f IN path_node_list
+with path, f, min(t.price) as f_min_p, path_node_list
+with path, sum(f_min_p) as cost, path_node_list
+WHERE cost < 3000
+UNWIND path_node_list as final_nodes
+MATCH (final_nodes:Airport)
+RETURN final_nodes
+7.
+MATCH (lax:Airport {name: "LAX"})
+CALL apoc.path.expand(lax, '<ORIGIN|DESTINATION>', null, 2, 8)
+YIELD path
+with path, nodes(path) as path_node_list
+MATCH (t:Ticket)-[:ASSIGN]->(f:Flight)
+WHERE f IN path_node_list
+with path, f, min(t.price) as f_min_p, path_node_list
+with path, sum(f_min_p) as cost, path_node_list
+WHERE cost < 3000
+UNWIND path_node_list as final_nodes
+MATCH (final_nodes:Airport)
+RETURN final_nodes
